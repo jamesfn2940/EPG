@@ -6,13 +6,8 @@
       "enabled": true
     },
     {
-      "name": "India",
-      "url": "https://www.open-epg.com/files/india.xml",
-      "enabled": true
-    },
-{
-      "name": "Indonesia",
-      "url": "https://www.open-epg.com/files/indonesia.xml",
+      "name": "Mix",
+      "url": "https://www.open-epg.com/generate/8tJ5AaJycY.xml",
       "enabled": true
     },
 {
