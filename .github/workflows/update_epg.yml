@@ -1,0 +1,47 @@
+name: Merge & Sync EPG
+
+on:
+  # ── Auto-run every day at 04:00 UTC ──────────────────────────────────────
+  schedule:
+    - cron: "0 4 * * *"
+
+  # ── Manual trigger from the Actions tab ──────────────────────────────────
+  workflow_dispatch:
+
+jobs:
+  merge-epg:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to push the merged file back to the repo
+
+    steps:
+      # 1. Check out the repository
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. Set up Python (stdlib only — no pip install needed)
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 3. Run the merger
+      - name: Merge EPG sources
+        env:
+          OUTPUT_FILE: epg_merged.xml   # change path/name if you prefer
+          FETCH_TIMEOUT: "30"
+        run: python merge_epg.py
+
+      # 4. Commit & push the merged file (only if something changed)
+      - name: Commit merged EPG
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add epg_merged.xml epg_status.json
+          # Only commit if there are actual changes
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: auto-update merged EPG [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+            git push
+          fi
