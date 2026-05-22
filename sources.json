@@ -12,17 +12,17 @@
     },
 {
       "name": "Japan1",
-      "url": "https://epgshare01.online/epgshare01/epg_ripper_JP1.xml.gz",
+      "url": "https://www.open-epg.com/files/japan1.xml",
       "enabled": true
     },
 {
       "name": "Japan2",
-      "url": "https://epgshare01.online/epgshare01/epg_ripper_JP2.xml.gz",
+      "url": "https://www.open-epg.com/files/japan2.xml",
       "enabled": true
     },
 {
       "name": "Japan3",
-      "url": "https://www.open-epg.com/files/japan2.xml",
+      "url": "https://www.open-epg.com/files/japan3.xml",
       "enabled": true
     },
 {
