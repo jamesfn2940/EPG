@@ -29,46 +29,6 @@
       "name": "UK",
       "url": "https://www.open-epg.com/files/unitedkingdom.xml",
       "enabled": true
-    },
-{
-      "name": "USA1",
-      "url": "https://www.open-epg.com/files/unitedstates10.xml",
-      "enabled": true
-    },
-{
-      "name": "USA2",
-      "url": "https://www.open-epg.com/files/unitedstates11.xml",
-      "enabled": true
-    },
-{
-      "name": "USA3",
-      "url": "https://www.open-epg.com/files/unitedstates3.xml",
-      "enabled": true
-    },
-{
-      "name": "USA4",
-      "url": "https://www.open-epg.com/files/unitedstates4.xml",
-      "enabled": true
-    },
-{
-      "name": "USA5",
-      "url": "https://www.open-epg.com/files/unitedstates6.xml",
-      "enabled": true
-    },
-{
-      "name": "USA6",
-      "url": "https://www.open-epg.com/files/unitedstates7.xml",
-      "enabled": true
-    },
-{
-      "name": "USA7",
-      "url": "https://www.open-epg.com/files/unitedstates8.xml",
-      "enabled": true
-    },
-{
-      "name": "USA8",
-      "url": "https://www.open-epg.com/files/unitedstates9.xml",
-      "enabled": true
     }
   ]
 }
