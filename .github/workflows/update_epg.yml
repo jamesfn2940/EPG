@@ -3,7 +3,7 @@ name: Merge & Sync EPG
 on:
   # ── Auto-run every day at 04:00 UTC ──────────────────────────────────────
   schedule:
-    - cron: "0 23 * * *"
+    - cron: "0 22 * * *"
 
   # ── Manual trigger from the Actions tab ──────────────────────────────────
   workflow_dispatch:
