@@ -1,0 +1,14 @@
+{
+  "sources": [
+    {
+      "name": "My EPG 1",
+      "url": "https://YOUR-REAL-EPG-URL-HERE.xml",
+      "enabled": true
+    },
+    {
+      "name": "My EPG 2",
+      "url": "https://YOUR-SECOND-EPG-URL.xml",
+      "enabled": true
+    }
+  ]
+}
