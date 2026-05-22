@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "name": "EPG Source 1",
+      "url": "https://example.com/epg1.xml",
+      "enabled": true
+    },
+    {
+      "name": "EPG Source 2 (gzipped)",
+      "url": "https://example.com/epg2.xml.gz",
+      "enabled": true
+    },
+    {
+      "name": "EPG Source 3 (disabled)",
+      "url": "https://example.com/epg3.xml",
+      "enabled": false
+    }
+  ]
+}
