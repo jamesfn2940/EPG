@@ -29,7 +29,7 @@ jobs:
       - name: Merge EPG sources
         env:
           OUTPUT_FILE: epg_merged.xml   # change path/name if you prefer
-          FETCH_TIMEOUT: "30"
+          FETCH_TIMEOUT: "120"
         run: python merge_epg.py
       - name: Compress merged EPG
         run: gzip -9 -f epg_merged.xml
