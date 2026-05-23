@@ -24,11 +24,6 @@
       "name": "Japan3",
       "url": "https://www.open-epg.com/files/japan3.xml",
       "enabled": true
-    },
-{
-      "name": "UK",
-      "url": "https://www.open-epg.com/files/unitedkingdom.xml",
-      "enabled": true
     }
   ]
 }
