@@ -42,13 +42,18 @@ def load_sources() -> list[dict]:
 
 
 def fetch_epg(url: str) -> bytes | None:
-    """Download EPG data; handles gzip transparently."""
+    """Download EPG data; handles gzip and large files."""
     log.info("  Fetching: %s", url)
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "EPG-Merger/1.0"})
         with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
-            raw = resp.read()
-        # Auto-detect gzip
+            chunks = []
+            while True:
+                chunk = resp.read(1024 * 1024)
+                if not chunk:
+                    break
+                chunks.append(chunk)
+            raw = b"".join(chunks)
         if raw[:2] == b"\x1f\x8b":
             raw = gzip.decompress(raw)
         return raw
