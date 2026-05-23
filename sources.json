@@ -1,8 +1,33 @@
 {
   "sources": [
     {
-      "name": "Main EPG",
-      "url": "https://iptv-epg.org/files/epg-cdrurcvmwk.xml",
+      "name": "Canada",
+      "url": "https://iptv-epg.org/files/epg-ca.xml",
+      "enabled": true
+    },
+{
+      "name": "Indonesia",
+      "url": "https://iptv-epg.org/files/epg-id.xml.gz",
+      "enabled": true
+    },
+{
+      "name": "Malaysia",
+      "url": "https://iptv-epg.org/files/epg-my.xml",
+      "enabled": true
+    },
+{
+      "name": "Singapore",
+      "url": "https://iptv-epg.org/files/epg-sg.xml",
+      "enabled": true
+    },
+{
+      "name": "UK",
+      "url": "https://iptv-epg.org/files/epg-gb.xml",
+      "enabled": true
+    },
+{
+      "name": "USA",
+      "url": "https://iptv-epg.org/files/epg-us.xml",
       "enabled": true
     },
     {
