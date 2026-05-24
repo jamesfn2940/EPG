@@ -49,6 +49,11 @@
       "name": "Japan3",
       "url": "https://www.open-epg.com/files/japan3.xml",
       "enabled": true
+    },
+{
+      "name": "WebSafety",
+      "url": "http://websafety101.net:5050/xmltv.php?username=rodneyduncan8@aol.com&password=D85rX6wtx9",
+      "enabled": true
     }
   ]
 }
